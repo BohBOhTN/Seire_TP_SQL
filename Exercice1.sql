@@ -43,3 +43,9 @@ ALTER TABLE CLIENT ADD Ville VARCHAR2(50);
 
 ALTER TABLE PRODUIT
 MODIFY Couleur varchar2(10) DEFAULT 'Blanc';
+
+/*Supprimer la colone Catégorie*/
+
+ALTER TABLE PRODUIT
+DROP COLUMN Categorie;
+
