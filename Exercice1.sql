@@ -28,3 +28,8 @@ CREATE TABLE VENTE (
     FOREIGN KEY (NumProd) REFERENCES PRODUIT (NumProd),
     FOREIGN KEY (NumC1) REFERENCES CLIENT (NumClient)
 );
+
+
+/*Renommer le nom de la colone adresse par VilleRep*/
+
+ALTER TABLE REPRESENTANT RENAME COLUMN Adresse TO VilleRep;
