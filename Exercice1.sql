@@ -36,4 +36,10 @@ ALTER TABLE REPRESENTANT RENAME COLUMN Adresse TO VilleRep;
 
 /*Ajouter une colonne Ville à Clients Varchar2(50)*/
 
-ALTER TABLE CLIENT ADD COLUMN Ville VARCHAR2(50);
+ALTER TABLE CLIENT ADD Ville VARCHAR2(50);
+
+
+/*Changer le type de la colonne couleur de varchar2(20) a varchar2(10) et par défaut a "Blanc"*/
+
+ALTER TABLE PRODUIT
+MODIFY Couleur varchar2(10) DEFAULT 'Blanc';
