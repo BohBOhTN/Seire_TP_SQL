@@ -16,3 +16,15 @@ CREATE TABLE CLIENT (
     NumClient NUMBER PRIMARY KEY,
     NomC1 VARCHAR(20)
 );
+
+CREATE TABLE VENTE (
+    NumRep NUMBER,
+    NumProd NUMBER,
+    NumC1 NUMBER,
+    dateVente DATE,
+    Quantite DECIMAL(7, 2),
+    PRIMARY KEY (NumRep, NumProd, NumC1),
+    FOREIGN KEY (NumRep) REFERENCES REPRESENTANT (NumRep),
+    FOREIGN KEY (NumProd) REFERENCES PRODUIT (NumProd),
+    FOREIGN KEY (NumC1) REFERENCES CLIENT (NumClient)
+);
