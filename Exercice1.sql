@@ -49,3 +49,13 @@ MODIFY Couleur varchar2(10) DEFAULT 'Blanc';
 ALTER TABLE PRODUIT
 DROP COLUMN Categorie;
 
+/*Remplire la table Representant*/
+
+INSERT INTO REPRESENTANT(NumRep,NomRep,VilleRep)
+VALUES (1,'Stephane','Lyon'),
+        (2,'Benjamin','Paris'),
+        (3,'Leonard','Lyon'),
+        (4,'Antoine','Brest'),
+        (5,'Bruno','Bayonne'),
+        (6,'Alain','Marseille'),
+        (7,'Mary','Brest');
