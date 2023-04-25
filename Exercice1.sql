@@ -33,3 +33,7 @@ CREATE TABLE VENTE (
 /*Renommer le nom de la colone adresse par VilleRep*/
 
 ALTER TABLE REPRESENTANT RENAME COLUMN Adresse TO VilleRep;
+
+/*Ajouter une colonne Ville à Clients Varchar2(50)*/
+
+ALTER TABLE CLIENT ADD COLUMN Ville VARCHAR2(50);
