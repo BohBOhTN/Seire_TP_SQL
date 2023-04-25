@@ -11,3 +11,8 @@ CREATE TABLE PRODUIT (
     Poids DECIMAL(7, 2),
     Categorie VARCHAR(20)
 );
+
+CREATE TABLE CLIENT (
+    NumClient NUMBER PRIMARY KEY,
+    NomC1 VARCHAR(20)
+);
