@@ -1,11 +1,11 @@
 CREATE TABLE REPRESENTANT (
-    NumRep number PRIMARY KEY,
+    NumRep INT PRIMARY KEY,
     NomRep VARCHAR(20),
     Adresse VARCHAR(20)
 );
 
 CREATE TABLE PRODUIT (
-    NumProd number PRIMARY KEY,
+    NumProd INT PRIMARY KEY,
     NomProd VARCHAR(20),
     Couleur VARCHAR(20),
     Poids DECIMAL(7, 2),
@@ -13,14 +13,14 @@ CREATE TABLE PRODUIT (
 );
 
 CREATE TABLE CLIENT (
-    NumClient NUMBER PRIMARY KEY,
+    NumClient INT PRIMARY KEY,
     NomC1 VARCHAR(20)
 );
 
 CREATE TABLE VENTE (
-    NumRep NUMBER,
-    NumProd NUMBER,
-    NumC1 NUMBER,
+    NumRep INT,
+    NumProd INT,
+    NumC1 INT,
     dateVente DATE,
     Quantite DECIMAL(7, 2),
     PRIMARY KEY (NumRep, NumProd, NumC1),
@@ -39,7 +39,7 @@ ALTER TABLE REPRESENTANT RENAME COLUMN Adresse TO VilleRep;
 ALTER TABLE CLIENT ADD Ville VARCHAR2(50);
 
 
-/*Changer le type de la colonne couleur de varchar2(20) a varchar2(10) et par défaut a "Blanc"*/
+/*Changer le type de la colonne couleur de varchar2(20) a varchar2(10) et par défaut a 'Blanc'*/
 
 ALTER TABLE PRODUIT
 MODIFY Couleur varchar2(10) DEFAULT 'Blanc';
@@ -59,3 +59,16 @@ VALUES (1,'Stephane','Lyon'),
         (5,'Bruno','Bayonne'),
         (6,'Alain','Marseille'),
         (7,'Mary','Brest');
+
+
+/*Remplire la table Produits*/
+
+INSERT INTO PRODUIT(NumProd,NomProd,Couleur)
+    VALUES (1,'Aspirateur','Rouge',3546),
+            (2,'Trotinette','Bleu',1423),
+            (3,'Chaise','Blanc',3827),
+            (4,'Tapis','Rouge',1423),
+            (7,'ChaiseCuisine','Noir',750),
+            (8,'Bicyclette','Gris',1000),
+            (9,'Bicyclette Babe','Rouge',500),
+            (10,'Seche cheveux','Noir',200);
