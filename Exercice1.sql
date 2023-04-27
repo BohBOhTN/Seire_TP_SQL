@@ -63,11 +63,13 @@ VALUES (1,'Stephane','Lyon'),
 
 /*Remplire la table Produits*/
 
-INSERT INTO PRODUIT(NumProd,NomProd,Couleur)
+INSERT INTO PRODUIT(NumProd,NomProd,Couleur,Poids)
     VALUES (1,'Aspirateur','Rouge',3546),
             (2,'Trotinette','Bleu',1423),
             (3,'Chaise','Blanc',3827),
             (4,'Tapis','Rouge',1423),
+            (5,'Chaise Bureu','Noir',750),
+            (6,'Canape','Blue',1500),
             (7,'ChaiseCuisine','Noir',750),
             (8,'Bicyclette','Gris',1000),
             (9,'Bicyclette Babe','Rouge',500),
