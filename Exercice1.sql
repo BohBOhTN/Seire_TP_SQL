@@ -74,3 +74,19 @@ INSERT INTO PRODUIT(NumProd,NomProd,Couleur,Poids)
             (8,'Bicyclette','Gris',1000),
             (9,'Bicyclette Babe','Rouge',500),
             (10,'Seche cheveux','Noir',200);
+
+
+/*Remplire la table Client*/
+
+
+INSERT INTO Client(NumClient,NomC1,Ville)
+VALUES (1,'Alice','Lyon'),
+        (2,'Bruno','Compiègne'),
+        (3,'Charles','Lyon'),
+        (4,'Denis','Montpellier'),
+        (5,'Emile','Paris'),
+        (6,'Carla','Paris'),
+        (7,'Helena','Lyon'),
+        (8,'Riboni','Compiègne'),
+        (9,'Denis','Brest'),
+        (10,'Emily','Nice');
